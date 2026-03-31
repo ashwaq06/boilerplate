@@ -73,3 +73,38 @@ Go to http://localhost:3000:
 
 
 ![Go Fiber Docker Boilerplate](./go_fiber_boilerplate.gif)
+
+## OpenClaw Integration
+
+[OpenClaw](https://github.com/openclaw/openclaw) is an open-source, self-hosted AI agent runtime (MIT-licensed) that connects chat platforms to an AI agent capable of executing real-world tasks on your machine.
+
+### Key Features
+
+- **Gateway daemon** — runs as a background service, routing messages from connected channels (WhatsApp, Discord, etc.) to an AI agent
+- **Skills system** — modular, Markdown-based skills installable from [ClawHub](https://clawhub.dev), the community registry with 13,000+ skills
+- **Full system access** — browser automation, file read/write, shell commands, and cron scheduling
+- **Persistent memory** — remembers user preferences, projects, and context across sessions
+- **Proactive automation** — schedule recurring tasks or let the agent suggest optimizations
+
+### CLI Quick Reference
+
+```bash
+# Launch the interactive setup wizard
+openclaw onboard
+
+# Start the background gateway daemon
+openclaw gateway start
+
+# Install a skill from ClawHub
+clawhub install <skill-slug>
+
+# Run diagnostics on your installation
+openclaw doctor
+```
+
+### Getting Started
+
+1. Install OpenClaw via the [official docs](https://github.com/openclaw/openclaw)
+2. Run `openclaw onboard` to configure your channels and LLM provider
+3. Start the gateway with `openclaw gateway start`
+4. Install skills as needed: `clawhub install github`, `clawhub install filesystem`, etc.
