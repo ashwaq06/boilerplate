@@ -28,6 +28,12 @@ Use the following plugins, in this boilerplate project:
 go run app.go
 ```
 
+### Build the application
+
+```bash
+go build -o app .
+```
+
 ### Use local container
 
 ```
